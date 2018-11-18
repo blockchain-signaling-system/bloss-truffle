@@ -1,6 +1,7 @@
 as400/build
 as400/deploy.log
 as400/as400.txt
+as400/relay.txt
 as500/build
 as500/deploy.log
 as500/as500.txt
