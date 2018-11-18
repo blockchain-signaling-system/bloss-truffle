@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo "Cleaning dir...";
-rm -rf ./build;
+rm -r ./build;
+rm ./as500.txt;

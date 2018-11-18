@@ -1,0 +1,73 @@
+Compiling ./contracts/AutonomousSystem.sol...
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/Relay.sol...
+
+Compilation warnings encountered:
+
+/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:22:5: Warning: No visibility specified. Defaulting to "public". 
+    function setPublicKey(string ipfsHash_)
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:28:5: Warning: No visibility specified. Defaulting to "public". 
+    function getPublicKey() constant returns (string) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:32:5: Warning: No visibility specified. Defaulting to "public". 
+    function reportAttackers(string attackReport_) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:36:5: Warning: No visibility specified. Defaulting to "public". 
+    function setBlocked(string hash_, bool blocked_)
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:42:5: Warning: No visibility specified. Defaulting to "public". 
+    function isBlocked(string hash_) constant returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/AutonomousSystem.sol:46:5: Warning: No visibility specified. Defaulting to "public". 
+    function retrieveAttackers()
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:4:5: Warning: No visibility specified. Defaulting to "public". 
+    function reportAttackers(string attackReport_) {}
+    ^-----------------------------------------------^
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:4:30: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function reportAttackers(string attackReport_) {}
+                             ^------------------^
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:5:5: Warning: No visibility specified. Defaulting to "public". 
+    function getPublicKey() constant returns (string) {}
+    ^--------------------------------------------------^
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function addSubnetwork(string subnetwork_, address contractAddress_) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function reportAttackers(string subnetwork_, string attackReport_) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:4:5: Warning: Function state mutability can be restricted to pure
+    function reportAttackers(string attackReport_) {}
+    ^-----------------------------------------------^
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:5:5: Warning: Function state mutability can be restricted to pure
+    function getPublicKey() constant returns (string) {}
+    ^--------------------------------------------------^
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:12:5: Warning: Function state mutability can be restricted to view
+    function getContractAddress(string subnetwork_) public returns (address) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/killer/proj/blockchain-signaling-system/bloss-truffle/as600/contracts/Relay.sol:26:5: Warning: Function state mutability can be restricted to view
+    function getPublicKey(string subnetwork_) public returns (string) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+Writing artifacts to ./build/contracts
+
+Using network 'as600'.
+
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0x91cc181fdd2142361c602620fd8150b63c55ef143f63c3b17800a180349b7787
+  Migrations: 0x23bea634348ec07d402bb8f4cae9ee06c8ffcea7
+Saving successful migration to network...
+  ... 0x6be154cd9254809f365601f7792990d59dc398925ac4d0c41b9412258c9d1ee7
+Saving artifacts...
+Running migration: 2_deploy_as.js
+  Deploying AutonomousSystem...
+  ... 0x978755dab59de4237718c6a1819790201118f622a4f9f6c1aac9d2e264b823bd
+  AutonomousSystem: 0xd70ef83d3e8994d98bdf09dd7ce67e6d6302f36e
+  Running step...
+AutonomousSystem [as600] contract is deployed at 0xd70ef83d3e8994d98bdf09dd7ce67e6d6302f36e
+Saving successful migration to network...
+as600.txt contains the AS600 address
+  ... 0xd637703fd224c381f733bba8ddbaffb870ab35dc0b458e895e6fa340974ad0db
+Saving artifacts...
